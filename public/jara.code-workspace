@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "checkout",
+			"path": "..\\..\\Bootstrap\\bootstrap-4.5.0-examples\\checkout"
+		},
+		{
+			"name": "Jarajohn",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Jarajohn"
+	}
+}

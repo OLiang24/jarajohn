@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="SAWIKAKAKAKAKKAKAKAKAKA">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Checkout example · Bootstrap</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" n.css rel="stylesheet">
+  <link href="form-validation.js" n.css rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<div class="py-5 text-center">
+  <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <i class="fab fa-buffer fa-10x text-warning"></i>
+  <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+  <p>Traffic Tacket issued by Traffic Officers or Competent Officials</p>
+</div>
+<div class="container">
+  <div class="mb-3">
+    <label for="tabern"><b>ชื่อผู้ขับขี่,เจ้าของหรือผู้ครอบครอง</b></label>
+    <input type="tabern" class="form-control" id="tabern">
+    <div class="invalid-feedback">
+    </div>
+  </div>
+
+  <label><b>ที่อยู่</b></label>
+  <div class="row mb-3">
+    <div class="col-md-4 mb-3">
+      <label for="tabern">บ้านเลขที่</label>
+      <input type="text" class="form-control" id="where" placeholder="บ้านเลขที่" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ตรอก/ซอย</label>
+      <input type="text" class="form-control" id="where" placeholder="ตรอก/ซอย" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ถนน</label>
+      <input type="text" class="form-control" id="where" placeholder="ถนน" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ตำบล/แขวง</label>
+      <input type="text" class="form-control" id="where" placeholder="ตำบล/แขวง" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">อำเภอ/เขต</label>
+      <input type="text" class="form-control" id="where" placeholder="อำเภอ/เขต" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">จังหวัด</label>
+      <label for="province">จังหวัด</label>
+      <select name="province" id="province" class="form-control">
+        <option value="" selected>--เลือกจังหวัด--</option>
+        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+        <option value="กระบี่">กระบี่ </option>
+        <option value="กาญจนบุรี">กาญจนบุรี </option>
+        <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+        <option value="กำแพงเพชร">กำแพงเพชร </option>
+        <option value="ขอนแก่น">ขอนแก่น</option>
+        <option value="จันทบุรี">จันทบุรี</option>
+        <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+        <option value="ชัยนาท">ชัยนาท </option>
+        <option value="ชัยภูมิ">ชัยภูมิ </option>
+        <option value="ชุมพร">ชุมพร </option>
+        <option value="ชลบุรี">ชลบุรี </option>
+        <option value="เชียงใหม่">เชียงใหม่ </option>
+        <option value="เชียงราย">เชียงราย </option>
+        <option value="ตรัง">ตรัง </option>
+        <option value="ตราด">ตราด </option>
+        <option value="ตาก">ตาก </option>
+        <option value="นครนายก">นครนายก </option>
+        <option value="นครปฐม">นครปฐม </option>
+        <option value="นครพนม">นครพนม </option>
+        <option value="นครราชสีมา">นครราชสีมา </option>
+        <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+        <option value="นครสวรรค์">นครสวรรค์ </option>
+        <option value="นราธิวาส">นราธิวาส </option>
+        <option value="น่าน">น่าน </option>
+        <option value="นนทบุรี">นนทบุรี </option>
+        <option value="บึงกาฬ">บึงกาฬ</option>
+        <option value="บุรีรัมย์">บุรีรัมย์</option>
+        <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+        <option value="ปทุมธานี">ปทุมธานี </option>
+        <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+        <option value="ปัตตานี">ปัตตานี </option>
+        <option value="พะเยา">พะเยา </option>
+        <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+        <option value="พังงา">พังงา </option>
+        <option value="พิจิตร">พิจิตร </option>
+        <option value="พิษณุโลก">พิษณุโลก </option>
+        <option value="เพชรบุรี">เพชรบุรี </option>
+        <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+        <option value="แพร่">แพร่ </option>
+        <option value="พัทลุง">พัทลุง </option>
+        <option value="ภูเก็ต">ภูเก็ต </option>
+        <option value="มหาสารคาม">มหาสารคาม </option>
+        <option value="มุกดาหาร">มุกดาหาร </option>
+        <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+        <option value="ยโสธร">ยโสธร </option>
+        <option value="ยะลา">ยะลา </option>
+        <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+        <option value="ระนอง">ระนอง </option>
+        <option value="ระยอง">ระยอง </option>
+        <option value="ราชบุรี">ราชบุรี</option>
+        <option value="ลพบุรี">ลพบุรี </option>
+        <option value="ลำปาง">ลำปาง </option>
+        <option value="ลำพูน">ลำพูน </option>
+        <option value="เลย">เลย </option>
+        <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+        <option value="สกลนคร">สกลนคร</option>
+        <option value="สงขลา">สงขลา </option>
+        <option value="สมุทรสาคร">สมุทรสาคร </option>
+        <option value="สมุทรปราการ">สมุทรปราการ </option>
+        <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+        <option value="สระแก้ว">สระแก้ว </option>
+        <option value="สระบุรี">สระบุรี </option>
+        <option value="สิงห์บุรี">สิงห์บุรี </option>
+        <option value="สุโขทัย">สุโขทัย </option>
+        <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+        <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+        <option value="สุรินทร์">สุรินทร์ </option>
+        <option value="สตูล">สตูล </option>
+        <option value="หนองคาย">หนองคาย </option>
+        <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+        <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+        <option value="อุดรธานี">อุดรธานี </option>
+        <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+        <option value="อุทัยธานี">อุทัยธานี </option>
+        <option value="อุบลราชธานี">อุบลราชธานี</option>
+        <option value="อ่างทอง">อ่างทอง </option>
+        <option value="อื่นๆ">อื่นๆ</option>
+      </select> </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="tabern"><b>ข้อหา</b></label>
+    <input type="tabern" class="form-control" id="tabern">
+    <div class="invalid-feedback">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6 py-1 ">ความเร็วตามที่กฎหมายกำหนด
+      <input type="text" id="zip" class="" onKeyPress="CheckNum()" placeholder=" " required> กม./ชม.</div>
+    <div class="col-md-6 py-1"> ความเร็วที่ตรวจจับ
+      <input type="text" id="zip" class="" onKeyPress="CheckNum()" placeholder="  " required> กม./ชม. </div>
+    <div class="col-md-6 py-1">ช่องทางเดินรถที่
+      <input type="text" id="zip" class="" onKeyPress="CheckNum()" placeholder=" " required> </div>
+    <div class="col-md-6 py-1">หมายเลขทะเบียนรถ
+      <input type="text" id="zip" class="" onKeyPress="CheckNum()" placeholder="  " required></div>
+  </div>
+  <div class="">อาศัยอำนาจตามความในมาตรา 140 วรรค หนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.2522
+    ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก(ฉบับที่ 9) พ.ศ.2557 และมาตรา 141 แห่ง
+    พ.ร.บ.จราจรทางบก พ.ศ.2552 ซึ่งแก้ไข เพิ่มเติมโดย พ.ร.บ.จราจรทางบก(ฉบับที่ 11)
+    พ.ศ.2559 ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ ไปชำระค่าปรับ<b>ข้อกำหนดสำนักงานตำรวจแห่งชาติ</b>
+    ต่อพนักงานสอบสวน หรือชำระด้วยวิธีอื่นใดตามที่ระบุไว้ ด้านหลังใบสั่งนี้
+  </div>
+  
+  <div class="py-3 text-center"><u><b>โปรดอ่านคำเตือนและวิธีการชำระค่าปรับด้านหลัง</b></u>
+  </div>
+
+<hr class=" mb-4">
+  <label><b><u>ผู้ออกใบสั่ง</u></b></label>
+  <div class="row mb-3">
+    <div class="col-md-6 mb-3">
+      <label for="tabern"><b>ชื่อ</b></label>
+      <input type="text" class="form-control" id="tabern" placeholder="นายกอ" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="tabern">รหัส</label>
+      <input type="text" class="form-control" id="tabern" onKeyPress="CheckNum()" placeholder="xx-xxxx" required>
+    </div>
+  </div>
+
+  <label><b>หน่วยงานผู้ออกใบสั่ง</b></label>
+  <div class="row mb-3">
+    <div class="col-md-9 mb-3">
+      <label><b>ที่อยู่</b></label>
+      <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+          <label for="tabern">เลขที่</label>
+          <input type="text" class="form-control" id="where" placeholder="" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="tabern">ตรอก/ซอย</label>
+          <input type="text" class="form-control" id="where" placeholder="ตรอก/ซอย" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="tabern">ถนน</label>
+          <input type="text" class="form-control" id="where" placeholder="ถนน" required>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="tabern">ตำบล/แขวง</label>
+          <input type="text" class="form-control" id="where" placeholder="ตำบล/แขวง" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="tabern">อำเภอ/เขต</label>
+          <input type="text" class="form-control" id="where" placeholder="อำเภอ/เขต" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="tabern">จังหวัด</label>
+            <label for="province">จังหวัด</label>
+            <select name="province" id="province" class="form-control">
+              <option value="" selected>--เลือกจังหวัด--</option>
+              <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+              <option value="กระบี่">กระบี่ </option>
+              <option value="กาญจนบุรี">กาญจนบุรี </option>
+              <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+              <option value="กำแพงเพชร">กำแพงเพชร </option>
+              <option value="ขอนแก่น">ขอนแก่น</option>
+              <option value="จันทบุรี">จันทบุรี</option>
+              <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+              <option value="ชัยนาท">ชัยนาท </option>
+              <option value="ชัยภูมิ">ชัยภูมิ </option>
+              <option value="ชุมพร">ชุมพร </option>
+              <option value="ชลบุรี">ชลบุรี </option>
+              <option value="เชียงใหม่">เชียงใหม่ </option>
+              <option value="เชียงราย">เชียงราย </option>
+              <option value="ตรัง">ตรัง </option>
+              <option value="ตราด">ตราด </option>
+              <option value="ตาก">ตาก </option>
+              <option value="นครนายก">นครนายก </option>
+              <option value="นครปฐม">นครปฐม </option>
+              <option value="นครพนม">นครพนม </option>
+              <option value="นครราชสีมา">นครราชสีมา </option>
+              <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+              <option value="นครสวรรค์">นครสวรรค์ </option>
+              <option value="นราธิวาส">นราธิวาส </option>
+              <option value="น่าน">น่าน </option>
+              <option value="นนทบุรี">นนทบุรี </option>
+              <option value="บึงกาฬ">บึงกาฬ</option>
+              <option value="บุรีรัมย์">บุรีรัมย์</option>
+              <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+              <option value="ปทุมธานี">ปทุมธานี </option>
+              <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+              <option value="ปัตตานี">ปัตตานี </option>
+              <option value="พะเยา">พะเยา </option>
+              <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+              <option value="พังงา">พังงา </option>
+              <option value="พิจิตร">พิจิตร </option>
+              <option value="พิษณุโลก">พิษณุโลก </option>
+              <option value="เพชรบุรี">เพชรบุรี </option>
+              <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+              <option value="แพร่">แพร่ </option>
+              <option value="พัทลุง">พัทลุง </option>
+              <option value="ภูเก็ต">ภูเก็ต </option>
+              <option value="มหาสารคาม">มหาสารคาม </option>
+              <option value="มุกดาหาร">มุกดาหาร </option>
+              <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+              <option value="ยโสธร">ยโสธร </option>
+              <option value="ยะลา">ยะลา </option>
+              <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+              <option value="ระนอง">ระนอง </option>
+              <option value="ระยอง">ระยอง </option>
+              <option value="ราชบุรี">ราชบุรี</option>
+              <option value="ลพบุรี">ลพบุรี </option>
+              <option value="ลำปาง">ลำปาง </option>
+              <option value="ลำพูน">ลำพูน </option>
+              <option value="เลย">เลย </option>
+              <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+              <option value="สกลนคร">สกลนคร</option>
+              <option value="สงขลา">สงขลา </option>
+              <option value="สมุทรสาคร">สมุทรสาคร </option>
+              <option value="สมุทรปราการ">สมุทรปราการ </option>
+              <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+              <option value="สระแก้ว">สระแก้ว </option>
+              <option value="สระบุรี">สระบุรี </option>
+              <option value="สิงห์บุรี">สิงห์บุรี </option>
+              <option value="สุโขทัย">สุโขทัย </option>
+              <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+              <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+              <option value="สุรินทร์">สุรินทร์ </option>
+              <option value="สตูล">สตูล </option>
+              <option value="หนองคาย">หนองคาย </option>
+              <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+              <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+              <option value="อุดรธานี">อุดรธานี </option>
+              <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+              <option value="อุทัยธานี">อุทัยธานี </option>
+              <option value="อุบลราชธานี">อุบลราชธานี</option>
+              <option value="อ่างทอง">อ่างทอง </option>
+              <option value="อื่นๆ">อื่นๆ</option>
+            </select>
+          </div>
+        <div class="col-md-4 mb-3">
+          <label for="tabern">รหัสไปรษณีย์</label>
+          <input type="text" class="form-control" id="where" onKeyPress="CheckNum()" placeholder="xxxxx" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="tabern">โทร</label>
+          <input type="text" class="form-control" id="where" onKeyPress="CheckNum()" placeholder="+66" required>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr class=" mb-4">
+  <div class="mb-3">
+    <label for="tabern"><b>ชื่อผู้รับ</b></label>
+    <input type="tabern" class="form-control" id="tabern">
+    <div class="invalid-feedback">
+    </div>
+  </div>
+
+  <label><b>ที่อยู่ผู้รับ</b></label>
+  <div class="row mb-3">
+    <div class="col-md-4 mb-3">
+      <label for="tabern">บ้านเลขที่</label>
+      <input type="text" class="form-control" id="where" placeholder="บ้านเลขที่" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ตรอก/ซอย</label>
+      <input type="text" class="form-control" id="where" placeholder="ตรอก/ซอย" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ถนน</label>
+      <input type="text" class="form-control" id="where" placeholder="ถนน<" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="tabern">ตำบล/แขวง</label>
+      <input type="text" class="form-control" id="where" placeholder="ตำบล/แขวง" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">อำเภอ/เขต</label>
+      <input type="text" class="form-control" id="where" placeholder="อำเภอ/เขต" required>
+    </div>
+    <div class="col-md-4 ">
+      <label for="tabern">จังหวัด</label>
+      <label for="province">จังหวัด</label>
+      <select name="province" id="province" class="form-control">
+        <option value="" selected>--เลือกจังหวัด--</option>
+        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+        <option value="กระบี่">กระบี่ </option>
+        <option value="กาญจนบุรี">กาญจนบุรี </option>
+        <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+        <option value="กำแพงเพชร">กำแพงเพชร </option>
+        <option value="ขอนแก่น">ขอนแก่น</option>
+        <option value="จันทบุรี">จันทบุรี</option>
+        <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+        <option value="ชัยนาท">ชัยนาท </option>
+        <option value="ชัยภูมิ">ชัยภูมิ </option>
+        <option value="ชุมพร">ชุมพร </option>
+        <option value="ชลบุรี">ชลบุรี </option>
+        <option value="เชียงใหม่">เชียงใหม่ </option>
+        <option value="เชียงราย">เชียงราย </option>
+        <option value="ตรัง">ตรัง </option>
+        <option value="ตราด">ตราด </option>
+        <option value="ตาก">ตาก </option>
+        <option value="นครนายก">นครนายก </option>
+        <option value="นครปฐม">นครปฐม </option>
+        <option value="นครพนม">นครพนม </option>
+        <option value="นครราชสีมา">นครราชสีมา </option>
+        <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+        <option value="นครสวรรค์">นครสวรรค์ </option>
+        <option value="นราธิวาส">นราธิวาส </option>
+        <option value="น่าน">น่าน </option>
+        <option value="นนทบุรี">นนทบุรี </option>
+        <option value="บึงกาฬ">บึงกาฬ</option>
+        <option value="บุรีรัมย์">บุรีรัมย์</option>
+        <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+        <option value="ปทุมธานี">ปทุมธานี </option>
+        <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+        <option value="ปัตตานี">ปัตตานี </option>
+        <option value="พะเยา">พะเยา </option>
+        <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+        <option value="พังงา">พังงา </option>
+        <option value="พิจิตร">พิจิตร </option>
+        <option value="พิษณุโลก">พิษณุโลก </option>
+        <option value="เพชรบุรี">เพชรบุรี </option>
+        <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+        <option value="แพร่">แพร่ </option>
+        <option value="พัทลุง">พัทลุง </option>
+        <option value="ภูเก็ต">ภูเก็ต </option>
+        <option value="มหาสารคาม">มหาสารคาม </option>
+        <option value="มุกดาหาร">มุกดาหาร </option>
+        <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+        <option value="ยโสธร">ยโสธร </option>
+        <option value="ยะลา">ยะลา </option>
+        <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+        <option value="ระนอง">ระนอง </option>
+        <option value="ระยอง">ระยอง </option>
+        <option value="ราชบุรี">ราชบุรี</option>
+        <option value="ลพบุรี">ลพบุรี </option>
+        <option value="ลำปาง">ลำปาง </option>
+        <option value="ลำพูน">ลำพูน </option>
+        <option value="เลย">เลย </option>
+        <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+        <option value="สกลนคร">สกลนคร</option>
+        <option value="สงขลา">สงขลา </option>
+        <option value="สมุทรสาคร">สมุทรสาคร </option>
+        <option value="สมุทรปราการ">สมุทรปราการ </option>
+        <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+        <option value="สระแก้ว">สระแก้ว </option>
+        <option value="สระบุรี">สระบุรี </option>
+        <option value="สิงห์บุรี">สิงห์บุรี </option>
+        <option value="สุโขทัย">สุโขทัย </option>
+        <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+        <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+        <option value="สุรินทร์">สุรินทร์ </option>
+        <option value="สตูล">สตูล </option>
+        <option value="หนองคาย">หนองคาย </option>
+        <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+        <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+        <option value="อุดรธานี">อุดรธานี </option>
+        <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+        <option value="อุทัยธานี">อุทัยธานี </option>
+        <option value="อุบลราชธานี">อุบลราชธานี</option>
+        <option value="อ่างทอง">อ่างทอง </option>
+        <option value="อื่นๆ">อื่นๆ</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">รหัสไปรษณีย์</label>
+      <input type="text" class="form-control" id="where" onKeyPress="CheckNum()" placeholder="xxxxx" required>
+    </div>
+  </div>
+
+  <hr class=" mb-4">
+  <div class="row mb-3">
+    <div class="col-md-4 mb-3">
+      <label for="tabern">เลขที่ใบสั่ง</label>
+      <input type="text" class="form-control" id="where" placeholder="xxxxxx" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">วันเวลากระทำผิด</label>
+      <input type="datetime-local"  class="form-control" id="where" placeholder="ตรอก/ซอย" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">จำนวนค่าปรับ</label>
+      <input type="text" class="form-control" id="where" placeholder=".00" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="tabern">วันกำหนดชำระ</label>
+      <input type="datetime-local" class="form-control" id="where" placeholder="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">คะแนนที่ถูกบันทึกเดิม</label>
+      <input type="text" class="form-control" id="where" placeholder="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">คะแนนที่ถูกบันทึกครั้งนี้</label>
+      <input type="text" class="form-control" id="where" placeholder="" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="tabern">คะแนนที่ถูกบันทึกรวม</label>
+      <input type="text" class="form-control" id="where" placeholder="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="tabern">สถานะใบอนุญาตขับขี่</label>
+      <input type="text" class="form-control" id="where" placeholder="" required>
+    </div>
+  </div>
+  <div class="py-5 text-center">
+    <i class="fas fa-chalkboard-teacher fa-10x text-warning"></i>
+    <h2>พยานหลักฐาน</h2>
+  </div>
+
+  <div class="form-group">
+    <label for="file">
+      <h5>พยานหลักฐาน</h5>
+    </label>
+    <div class="input-group mb-3">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="inputGroupFile02" required>
+        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+          file</label>
+      </div>
+      <div class="input-group-append">
+        <span class="btn btn-primary input-group-text" id="inputGroupFileAddon02">Upload</span>
+      </div>
+    </div>
+  </div>
+  <a class="back text-warning" href="index.html">ก่อนหน้า</a><ul></ul>
+  
+</div>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
